@@ -1,0 +1,10 @@
+Component,Quantity,Typical Model,Purpose
+Microcontroller Board,1,STM32F103C8T6,Main controller
+Temperature/Humidity Sensor,1,DHT11,Temperature and humidity acquisition
+Light Sensor,1,BH1750,Ambient light acquisition
+OLED Display,1,SSD1306 0.96 inch,Local display
+Active Buzzer,1,3.3V or transistor-driven,Audible alarm
+LED,1,Any 3.3V-compatible LED,Visual alarm
+USB-UART Adapter,1,CH340/CP2102,Debug telemetry
+Wi-Fi Module,0-1,ESP8266,Optional wireless telemetry
+Pull-up Resistor,1,4.7 kOhm,DHT11 data pull-up

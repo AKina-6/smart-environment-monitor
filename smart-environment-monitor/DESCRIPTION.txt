@@ -1,0 +1,1 @@
+An STM32-based smart environment monitoring system with sensor acquisition, OLED display, threshold alarms and optional wireless telemetry.
