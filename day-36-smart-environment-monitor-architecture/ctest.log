@@ -1,0 +1,10 @@
+Internal ctest changing into directory: /mnt/data/day36_smart_environment_monitor_build/projects/01-system-architecture-fault-handling/build
+Test project /mnt/data/day36_smart_environment_monitor_build/projects/01-system-architecture-fault-handling/build
+    Start 1: validation_tests
+1/2 Test #1: validation_tests .................   Passed    0.00 sec
+    Start 2: app_tests
+2/2 Test #2: app_tests ........................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.00 sec

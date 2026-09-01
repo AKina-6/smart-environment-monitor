@@ -1,0 +1,14 @@
+[ 10%] Building C object CMakeFiles/env_core.dir/src/sensor/sensor_validation.c.o
+[ 20%] Building C object CMakeFiles/env_core.dir/src/service/environment_service.c.o
+[ 30%] Building C object CMakeFiles/env_core.dir/src/app/environment_app.c.o
+[ 40%] Linking C static library libenv_core.a
+[ 40%] Built target env_core
+[ 50%] Building C object CMakeFiles/environment_monitor_sim.dir/src/platform/host/host_main.c.o
+[ 60%] Linking C executable environment_monitor_sim
+[ 60%] Built target environment_monitor_sim
+[ 70%] Building C object CMakeFiles/test_validation.dir/tests/test_validation.c.o
+[ 80%] Linking C executable test_validation
+[ 80%] Built target test_validation
+[ 90%] Building C object CMakeFiles/test_app.dir/tests/test_app.c.o
+[100%] Linking C executable test_app
+[100%] Built target test_app

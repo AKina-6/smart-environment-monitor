@@ -1,0 +1,27 @@
+Day 36 automated verification
+
+CMake configure status: 0
+CMake build status: 0
+CTest status: 0
+Simulation status: 0
+
+CTest output:
+Internal ctest changing into directory: /mnt/data/day36_smart_environment_monitor_build/projects/01-system-architecture-fault-handling/build
+Test project /mnt/data/day36_smart_environment_monitor_build/projects/01-system-architecture-fault-handling/build
+    Start 1: validation_tests
+1/2 Test #1: validation_tests .................   Passed    0.00 sec
+    Start 2: app_tests
+2/2 Test #2: app_tests ........................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.00 sec
+
+Simulation output:
+case=normal state=NORMAL T=24.0 H=45.0 L=500.0 fan=off light=off alarm=off warning=no
+case=dark state=DARK T=23.0 H=48.0 L=50.0 fan=off light=on alarm=off warning=no
+case=hot state=HOT T=33.0 H=40.0 L=600.0 fan=on light=off alarm=off warning=no
+case=degraded state=DEGRADED T=25.0 H=150.0 L=400.0 fan=off light=off alarm=off warning=yes
+case=fault state=FAULT T=95.0 H=150.0 L=400.0 fan=off light=off alarm=on warning=yes
+case=stale state=FAULT T=24.0 H=50.0 L=300.0 fan=off light=off alarm=on warning=yes
+summary cycles=6 degraded=1 faults=2 last=FAULT
