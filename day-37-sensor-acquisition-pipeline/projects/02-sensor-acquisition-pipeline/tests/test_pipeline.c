@@ -1,0 +1,4 @@
+#include <assert.h>
+#include "sensor/acquisition.h"
+#include "host_sensor.h"
+int main(void){ host_sensor_t host={0}; sensor_source_t src={&host,host_read_temperature,host_read_humidity,host_read_light}; acquisition_pipeline_t p; assert(acquisition_pipeline_init(&p,&src,0)); acquisition_pipeline_poll(&p,0); sensor_snapshot_t s=acquisition_pipeline_snapshot(&p,0); assert(s.temperature_valid&&s.humidity_valid&&s.light_valid&&s.coherent); acquisition_pipeline_poll(&p,250); acquisition_pipeline_poll(&p,500); acquisition_pipeline_poll(&p,750); acquisition_pipeline_poll(&p,1000); assert(p.temperature_reads==2U); assert(p.humidity_reads==2U); assert(p.light_reads==5U); host.fail_next_humidity=true; acquisition_pipeline_poll(&p,2000); s=acquisition_pipeline_snapshot(&p,2000); assert(!s.humidity_valid); assert(!s.coherent); assert(p.read_failures==1U); return 0; }

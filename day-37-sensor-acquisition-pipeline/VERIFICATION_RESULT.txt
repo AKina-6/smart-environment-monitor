@@ -1,0 +1,14 @@
+Day 37 automated verification
+
+CMake configure status: 0
+CMake build status: 0
+Compiler warnings: 0
+CTest status: 0 (2/2 passed)
+Simulation status: 0
+
+Simulation output:
+t=0 T=25.00 H=46.00 L=100.00 valid=111 coherent=yes reads=1/1/1 failures=0
+t=1000 T=25.50 H=45.50 L=329.69 valid=111 coherent=yes reads=2/2/5 failures=0
+t=2000 T=25.00 H=45.50 L=402.36 valid=101 coherent=no reads=3/2/9 failures=1
+t=3000 T=25.00 H=45.33 L=425.36 valid=111 coherent=yes reads=4/3/13 failures=1
+summary temp_reads=4 humidity_reads=3 light_reads=13 failures=1
