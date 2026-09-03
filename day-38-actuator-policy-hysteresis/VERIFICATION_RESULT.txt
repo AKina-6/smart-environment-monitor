@@ -1,0 +1,30 @@
+Day 38 automated verification
+
+CMake configure status: 0
+CMake build status: 0
+CTest status: 0
+Simulation status: 0
+
+CTest output:
+Internal ctest changing into directory: /mnt/data/day38_actuator_policy_build/projects/03-actuator-policy-hysteresis/build
+Test project /mnt/data/day38_actuator_policy_build/projects/03-actuator-policy-hysteresis/build
+    Start 1: actuator_policy_tests
+1/2 Test #1: actuator_policy_tests ............   Passed    0.00 sec
+    Start 2: actuator_fault_tests
+2/2 Test #2: actuator_fault_tests .............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.00 sec
+
+
+Simulation output:
+t=0 T=29.0 L=200 health=0 fan=off light=off alarm=off blocked=0
+t=500 T=30.5 L=90 health=0 fan=off light=off alarm=off blocked=2
+t=1000 T=30.5 L=90 health=0 fan=on light=on alarm=off blocked=2
+t=1500 T=29.2 L=120 health=0 fan=on light=on alarm=off blocked=2
+t=2000 T=27.5 L=160 health=0 fan=off light=off alarm=off blocked=2
+t=3000 T=31.0 L=80 health=1 fan=on light=on alarm=on blocked=2
+t=3500 T=40.0 L=20 health=2 fan=off light=off alarm=on blocked=2
+summary fan_switches=4 light_switches=4 blocked=2 alarm=on
+
