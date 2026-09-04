@@ -1,0 +1,55 @@
+Day 39 automated verification
+
+CMake configure status: 0
+CMake build status: 0
+CTest status: 0
+Simulation status: 0
+
+CTest output:
+Internal ctest changing into directory: /mnt/data/day39_oled_dashboard_build/projects/04-oled-dashboard-ui-state/build
+Test project /mnt/data/day39_oled_dashboard_build/projects/04-oled-dashboard-ui-state/build
+    Start 1: ui_state_tests
+1/2 Test #1: ui_state_tests ...................   Passed    0.00 sec
+    Start 2: ui_renderer_tests
+2/2 Test #2: ui_renderer_tests ................   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.00 sec
+
+
+Simulation output:
+page=OVERVIEW
+[OVERVIEW] NORMAL
+T:24.5C H:46.0%
+L:520lux
+FAN:OFF LIGHT:OFF ALARM:OFF
+page=SENSOR
+[SENSOR]
+TEMP 24.5 OK
+HUM  46.0 OK
+LUX  520 OK
+page=SENSOR
+[SENSOR]
+TEMP 24.5 OK
+HUM  46.0 ERR
+LUX  520 OK
+page=SYSTEM
+[SYSTEM]
+UPTIME:20000ms
+HEALTH:DEGRADED
+FAULTS:1
+PAGE_CHG:2
+page=FAULT
+[FAULT]
+ALARM:ON
+TEMP:ERR HUM:ERR LUX:OK
+FAULT_COUNT:2
+page=SYSTEM
+[SYSTEM]
+UPTIME:20000ms
+HEALTH:NORMAL
+FAULTS:2
+PAGE_CHG:3
+summary page_changes=3 forced_fault=1 final_page=SYSTEM
+
