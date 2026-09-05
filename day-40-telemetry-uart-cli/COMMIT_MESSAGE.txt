@@ -1,0 +1,1 @@
+feat: add telemetry UART CLI and runtime configuration interface

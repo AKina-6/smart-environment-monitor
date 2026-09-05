@@ -1,0 +1,33 @@
+Day 40 automated verification
+
+CMake configure status: 0
+CMake build status: 0
+CTest status: 0
+Simulation status: 0
+
+CTest output:
+Test project /tmp/day40_build
+    Start 1: config_tests
+1/2 Test #1: config_tests .....................   Passed
+    Start 2: cli_tests
+2/2 Test #2: cli_tests ........................   Passed
+100% tests passed, 0 tests failed out of 2
+
+Simulation output:
+> status
+T=24.8C H=46.5% L=380lux FAN=OFF LIGHT=OFF ALARM=OFF HEALTH=NORMAL UPTIME=12500ms FAULTS=1
+> get hot_on
+hot_on=30.0
+> set hot_on 31.5
+OK hot_on=31.5
+> get hot_on
+hot_on=31.5
+> set hot_off 32.0
+ERR config rejected
+> set hold_ms 1500
+OK hold_ms=1500
+> get hold_ms
+hold_ms=1500
+> badcmd
+ERR unknown command
+summary ok=6 error=2 updates=2 hot_on=31.5 hot_off=28.0 hold=1500
