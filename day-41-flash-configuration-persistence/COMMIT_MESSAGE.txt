@@ -1,0 +1,1 @@
+feat: add flash configuration persistence with CRC and dual slot recovery

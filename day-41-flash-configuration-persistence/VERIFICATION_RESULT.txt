@@ -1,0 +1,32 @@
+Day 41 automated verification
+
+CMake configure status: 0
+CMake build status: 0
+CTest status: 0
+Simulation status: 0
+
+CTest output:
+Internal ctest changing into directory: /mnt/data/day41_flash_persistence_build/projects/06-flash-configuration-persistence/build
+Test project /mnt/data/day41_flash_persistence_build/projects/06-flash-configuration-persistence/build
+    Start 1: crc_record_tests
+1/2 Test #1: crc_record_tests .................   Passed    0.00 sec
+    Start 2: config_store_tests
+2/2 Test #2: config_store_tests ...............   Passed    0.00 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.00 sec
+
+Simulation output:
+boot1 load=default source=DEFAULT hot_on=30.0 hold=1000
+save1 ok=yes
+active=B seq=1 hot_on=31.5 hold=1500
+save2 ok=yes
+active=A seq=2 hot_on=32.0
+boot2 load=flash
+recovered active=A seq=2 hot_on=32.0 hold=1500
+boot3_after_corruption load=flash
+fallback active=B seq=1 hot_on=31.5 fallback_count=1 invalid_slots=1
+write_failure save=no preserved_seq=1 preserved_hot_on=31.5
+summary erases=3 writes=2 reads=8 saves=2
+
