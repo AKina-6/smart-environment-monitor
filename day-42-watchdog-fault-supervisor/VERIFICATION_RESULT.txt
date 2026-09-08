@@ -1,0 +1,29 @@
+Day 42 automated verification
+
+CMake configure status: 0
+CMake build status: 0
+CTest status: 0
+Simulation status: 0
+
+CTest output:
+Internal ctest changing into directory: /mnt/data/day42_watchdog_supervisor_build/projects/07-watchdog-fault-supervisor/build
+Test project /mnt/data/day42_watchdog_supervisor_build/projects/07-watchdog-fault-supervisor/build
+    Start 1: supervisor_tests
+1/2 Test #1: supervisor_tests .................   Passed    0.01 sec
+    Start 2: reset_log_tests
+2/2 Test #2: reset_log_tests ..................   Passed    0.01 sec
+
+100% tests passed, 0 tests failed out of 2
+
+Total Test time (real) =   0.02 sec
+
+Simulation output:
+boot reason=POWER_ON boot_count=1
+t=500 refresh=yes fault=none refresh_count=1
+t=1000 refresh=yes fault=none refresh_count=2
+t=1500 refresh=yes fault=none refresh_count=3
+t=1800 refresh=yes fault=none blocked=0
+t=2100 refresh=yes fault=none blocked=0
+t=2400 refresh=no fault=CONTROL blocked=1
+reboot reason=WATCHDOG boot_count=2 watchdog_resets=1
+summary refresh=5 blocked=1 faults=1 last_reason=WATCHDOG

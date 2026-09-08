@@ -1,0 +1,1 @@
+feat: add watchdog fault supervisor reset reason and self recovery
