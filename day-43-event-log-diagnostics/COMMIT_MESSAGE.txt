@@ -1,0 +1,1 @@
+feat: add event log ring buffer and diagnostic snapshot
