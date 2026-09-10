@@ -1,0 +1,1 @@
+feat: add bootloader firmware update state machine

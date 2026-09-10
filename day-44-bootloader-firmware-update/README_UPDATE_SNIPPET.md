@@ -1,0 +1,2 @@
+- [x] Day 44：Bootloader / Firmware Update State Machine
+- [ ] Day 45：Firmware A/B Slot / Rollback
