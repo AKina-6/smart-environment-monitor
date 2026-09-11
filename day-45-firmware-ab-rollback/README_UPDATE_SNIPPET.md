@@ -1,0 +1,2 @@
+- [x] Day 45：Firmware A/B Slot / Rollback
+- [ ] Day 46：I2C Bus Driver / Transaction / Error Recovery

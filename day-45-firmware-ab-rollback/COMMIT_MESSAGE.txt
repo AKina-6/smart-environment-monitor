@@ -1,0 +1,1 @@
+feat: add firmware A/B slots and rollback transaction

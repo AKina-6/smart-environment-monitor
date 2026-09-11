@@ -1,0 +1,13 @@
+Python test exit=0
+PASS: upgrade and rollback
+
+Demo exit=0
+boot active=A version=1
+stage pending=B version=2
+boot candidate= B
+confirm active=B version=2
+failed boot attempt 1 slot=A
+failed boot attempt 2 slot=A
+failed boot attempt 3 slot=A
+rollback active=B version=2 pending_state= INVALID
+summary upgrade=PASS rollback=PASS
