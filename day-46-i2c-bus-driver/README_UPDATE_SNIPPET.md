@@ -1,0 +1,1 @@
+- [x] Day 46：I²C Bus Driver / Transaction / Error Recovery\n- [ ] Day 47：SPI Driver / Full-Duplex / Chip Select\n

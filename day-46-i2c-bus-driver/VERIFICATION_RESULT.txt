@@ -1,0 +1,11 @@
+Day 46 verification
+
+Host functional simulation: PASS
+Cases:
+- normal transaction: PASS
+- address NACK: PASS
+- timeout: PASS
+- SDA stuck-low recovery: PASS
+- recovery counter increment: PASS
+
+Note: the package contains the CMake/C implementation for local MCU/host compilation. The verification result above is from the self-contained host behavior model used to validate the transaction state machine.
