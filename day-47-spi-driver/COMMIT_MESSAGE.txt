@@ -1,0 +1,1 @@
+feat: add SPI transaction driver and mode configuration

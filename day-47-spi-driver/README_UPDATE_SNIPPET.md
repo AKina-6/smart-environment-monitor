@@ -1,0 +1,2 @@
+- [x] Day 47：SPI Driver / Full-Duplex / Chip Select / CPOL-CPHA
+- [ ] Day 48：DMA、Interrupt-driven I/O 与 Zero-Copy Buffer

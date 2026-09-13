@@ -1,0 +1,9 @@
+Test exit=0
+PASS: mode, CS, full-duplex, timeout
+
+Demo exit=0
+mode=MODE_3 clock=10000000Hz
+without_cs= BUS_ERROR
+transfer= OK rx= 9f 01 02 03 transfers= 1
+timeout= TIMEOUT
+summary mode=PASS cs=PASS full_duplex=PASS timeout=PASS
