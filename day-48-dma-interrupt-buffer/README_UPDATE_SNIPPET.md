@@ -1,0 +1,2 @@
+- [x] Day 48：DMA / Interrupt-driven I/O / Buffer Ownership / Zero-Copy
+- [ ] Day 49：UART DMA Ring Buffer、Frame Parser 与非阻塞通信

@@ -1,0 +1,7 @@
+Day 48 verification
+DMA start: PASS
+Busy protection: PASS
+Interrupt completion: PASS
+Buffer ownership transition DMA -> APP: PASS
+DMA error recovery: PASS
+Zero-copy ownership model: PASS
