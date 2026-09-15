@@ -1,0 +1,2 @@
+- [x] Day 49：UART DMA / Ring Buffer / Frame Parser / Non-blocking I/O
+- [ ] Day 50：Device Driver Layer、HAL 抽象与统一接口
