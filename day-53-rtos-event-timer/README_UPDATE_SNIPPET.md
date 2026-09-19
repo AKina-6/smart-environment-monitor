@@ -1,0 +1,2 @@
+- [x] Day 53：RTOS Event Group / Software Timer / Periodic Task
+- [ ] Day 54：RTOS Memory Management、Static Allocation、Heap 与 Fragmentation

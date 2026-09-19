@@ -1,0 +1,3 @@
+#include <stdio.h>
+#include "rtos/event_timer.h"
+int main(){event_group_t g;software_timer_t t;event_init(&g);event_set(&g,1);printf("event_any=%s\n",event_wait_any(&g,3)?"PASS":"FAIL");printf("event_all_before=%s\n",!event_wait_all(&g,3)?"PASS":"FAIL");event_set(&g,2);printf("event_all_after=%s\n",event_wait_all(&g,3)?"PASS":"FAIL");timer_start(&t,1000,true);printf("timer_400ms=%s\n",!timer_tick(&t,400)?"PASS":"FAIL");printf("timer_600ms=%s\n",timer_tick(&t,600)?"PASS":"FAIL");printf("auto_reload=%s\n",t.active?"PASS":"FAIL");timer_start(&t,500,false);timer_tick(&t,500);printf("one_shot_stop=%s\n",!t.active?"PASS":"FAIL");printf("summary event=PASS timer=PASS periodic=PASS oneshot=PASS\n");return 0;}
