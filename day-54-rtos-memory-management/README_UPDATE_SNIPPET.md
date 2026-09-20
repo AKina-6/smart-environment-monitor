@@ -1,0 +1,2 @@
+- [x] Day 54：RTOS Memory Management / Static Allocation / Memory Pool / Fragmentation
+- [ ] Day 55：RTOS Interrupt、Critical Section、ISR-safe API 与 Deferred Work
