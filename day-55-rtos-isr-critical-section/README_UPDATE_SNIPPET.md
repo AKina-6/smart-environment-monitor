@@ -1,0 +1,2 @@
+- [x] Day 55：ISR / Critical Section / ISR-safe API / Deferred Work
+- [ ] Day 56：Priority Inversion、Priority Inheritance 与 RTOS Synchronization

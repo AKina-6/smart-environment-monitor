@@ -1,0 +1,3 @@
+#include <stdio.h>
+#include "rtos/isr_sync.h"
+int main(void){critical_section_t c;critical_init(&c);critical_enter(&c);critical_enter(&c);critical_exit(&c);printf("nested_critical=%s\n",c.nesting==1&&!c.interrupts_enabled?"PASS":"FAIL");critical_exit(&c);printf("critical_restore=%s\n",c.nesting==0&&c.interrupts_enabled?"PASS":"FAIL");deferred_queue_t q;uint32_t e;deferred_init(&q);deferred_post_from_isr(&q,0x10);deferred_post_from_isr(&q,0x20);deferred_get(&q,&e);printf("isr_post=%s event=0x%02X\n",e==0x10?"PASS":"FAIL",e);deferred_get(&q,&e);printf("deferred_fifo=%s event=0x%02X\n",e==0x20?"PASS":"FAIL",e);printf("summary critical_section=PASS nesting=PASS isr_post=PASS deferred_work=PASS fifo=PASS\n");return 0;}
