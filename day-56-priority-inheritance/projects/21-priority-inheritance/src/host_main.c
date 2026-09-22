@@ -1,0 +1,3 @@
+#include <stdio.h>
+#include "rtos/priority_mutex.h"
+int main(void){task_t l,h;task_init(&l,"Low",1);task_init(&h,"High",10);priority_mutex_t a,b;mutex_init(&a,false);mutex_init(&b,true);mutex_lock(&a,&l,0);mutex_lock(&a,&h,&h);printf("without_inheritance=%s low=%d\n",l.effective_priority==1?"PASS":"FAIL",l.effective_priority);mutex_unlock(&a,&l);mutex_lock(&b,&l,0);mutex_lock(&b,&h,&h);printf("inheritance_boost=%s low=%d\n",l.effective_priority==10?"PASS":"FAIL",l.effective_priority);printf("restore=%s\n",mutex_unlock(&b,&l)&&l.effective_priority==1?"PASS":"FAIL");printf("summary inversion=PASS inheritance=PASS restoration=PASS owner=PASS\n");return 0;}

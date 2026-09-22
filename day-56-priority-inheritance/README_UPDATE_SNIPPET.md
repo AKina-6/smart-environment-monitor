@@ -1,0 +1,2 @@
+- [x] Day 56：Priority Inversion / Priority Inheritance / Effective Priority
+- [ ] Day 57：FreeRTOS 实机迁移：Task、Queue、Mutex、Timer 与 Tick
